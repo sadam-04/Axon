@@ -9,13 +9,12 @@ set WX_LIB=%WX_DIR%\lib\vc_x64_dll
 set WX_INC=%WX_DIR%\include
 set WX_SETUP_INC=%WX_LIB%\mswu
 
-@REM  src\*.cpp src\common\*.cpp src\settings\*.cpp src\nayuki-qr\qrcodegen.cpp ^
 mkdir out
 if "%1"=="debug" (
     echo Compiling debug version...
     mkdir "out\debug\"
     cl /EHsc /std:c++17 ^
-     src/main.cpp ^
+     src\*.cpp src\common\*.cpp src\settings\*.cpp src\nayuki-qr\qrcodegen.cpp ^ ^
      src\icon\icon.res ^
      /Fe:out\debug\Axon.exe /Fo:out\debug\ ^
      /I"%VCPKG_ROOT%\%TRIPLET%\include" /I"%WX_INC%" /I"%WX_INC%\msvc" /I"%WX_SETUP_INC%" ^
