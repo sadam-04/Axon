@@ -1,0 +1,24 @@
+{
+  "name": "axon-node",
+  "version": "1.0.0",
+  "description": "Axon node",
+  "homepage": "https://github.com/sadam-04/Axon-node#readme",
+  "bugs": {
+    "url": "https://github.com/sadam-04/Axon-node/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadam-04/Axon-node.git"
+  },
+  "license": "MIT",
+  "author": "Adam Saich",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "electron": "^38.1.1"
+  }
+}
